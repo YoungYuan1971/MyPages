@@ -1,0 +1,1353 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Typora 入门 - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="brown" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#typora" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Typora 入门
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="brown" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/YoungYuan1971/my_projects" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    YoungYuan1971/my_projects
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/YoungYuan1971/my_projects" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    YoungYuan1971/my_projects
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Welcome to MkDocs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          教程
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="教程" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          教程
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../page-01/" class="md-nav__link">
+        markdown中公式编辑教程
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Typora 入门
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Typora 入门
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    简介
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown" class="md-nav__link">
+    Markdown介绍
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    常用快捷键
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    块元素
+  </a>
+  
+    <nav class="md-nav" aria-label="块元素">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    换行符
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    标题级别
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    引用文字
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    无序列表
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    有序列表
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    任务列表
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    数学表达式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    插入表格
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    脚注
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    分割线
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    目录
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    跨度元素
+  </a>
+  
+    <nav class="md-nav" aria-label="跨度元素">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    链接
+  </a>
+  
+    <nav class="md-nav" aria-label="链接">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    内部链接
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    引用链接
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    网址
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    图片
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    强调语法
+  </a>
+  
+    <nav class="md-nav" aria-label="强调语法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    斜体
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    加粗
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    加粗斜体
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    代码标记
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    删除线
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    下划线
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    高亮
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    下标
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    上标
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    文本居中
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    标题居中
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    换行符
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    转义语法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#html" class="md-nav__link">
+    HTML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    总结
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../page-03/" class="md-nav__link">
+        屏蔽网页指定的元素
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    简介
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown" class="md-nav__link">
+    Markdown介绍
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    常用快捷键
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    块元素
+  </a>
+  
+    <nav class="md-nav" aria-label="块元素">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    换行符
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    标题级别
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    引用文字
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    无序列表
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    有序列表
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    任务列表
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    数学表达式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    插入表格
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    脚注
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    分割线
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    目录
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    跨度元素
+  </a>
+  
+    <nav class="md-nav" aria-label="跨度元素">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    链接
+  </a>
+  
+    <nav class="md-nav" aria-label="链接">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    内部链接
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    引用链接
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    网址
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    图片
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    强调语法
+  </a>
+  
+    <nav class="md-nav" aria-label="强调语法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    斜体
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    加粗
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    加粗斜体
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    代码标记
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    删除线
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    下划线
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    高亮
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    下标
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    上标
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    文本居中
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    标题居中
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    换行符
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    转义语法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#html" class="md-nav__link">
+    HTML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    总结
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/YoungYuan1971/my_projects/edit/master/docs/教程/page-02.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="typora">Typora 入门<a class="headerlink" href="#typora" title="Permanent link">&para;</a></h1>
+<h2 id="_1">简介<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Typora是一款轻便简洁的Markdown编辑器，支持即时渲染技术，这也是与其他Markdown编辑器最显著的区别。即时渲染使得写Markdown就象是写Word文档一样流畅自如，不像其他编辑器的有编辑栏和显示栏。</p>
+<ul>
+<li>Typora删除了预览窗口，以及所有其他不必要的干扰。取而代之的是实时预览。</li>
+<li>Markdown的语法因不同的解析器或编辑器而异，Typora使用的是<a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/">GitHub Flavored Markdown</a>。</li>
+</ul>
+<h2 id="markdown">Markdown介绍<a class="headerlink" href="#markdown" title="Permanent link">&para;</a></h2>
+<p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。</p>
+<p>Markdown 语言在2004年由约翰·格鲁伯（John Gruber）创建。</p>
+<p>Markdown 编写的文档可以导出HTML、Word、图像、PDF、Epub 等多种格式的文档。</p>
+<p>Markdown 编写的文档后缀为 <code>.md</code>, <code>.markdown</code>。</p>
+<h2 id="_2">常用快捷键<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Tips: </p>
+<p>Windows系统<kbd>Ctrl</kbd>键，<kbd>Alt</kbd>键，对应：</p>
+<p>Mac系统<kbd>command</kbd>键，<kbd>option</kbd>键</p>
+<ul>
+<li>加粗： <code>Ctrl+B</code></li>
+<li>标题： <code>Ctrl+H</code></li>
+<li>插入链接： <code>Ctrl+K</code></li>
+<li>插入代码： <code>Ctrl+Shift+C</code> -- 无法执行</li>
+<li>行内代码： <code>Ctrl+Shift+K</code></li>
+<li>插入图片： <code>Ctrl+Shift+I</code></li>
+<li>无序列表：<code>Ctrl+Shift+L</code> -- 无法执行</li>
+<li>撤销： <code>Ctrl+Z</code></li>
+<li>一级标题： <code>Ctrl+1</code> -- 以此类推</li>
+</ul>
+<div class="highlight"><pre><span></span><code>Typora快捷键整合
+Ctrl+1  一阶标题    Ctrl+B  字体加粗
+Ctrl+2  二阶标题    Ctrl+I  字体倾斜
+Ctrl+3  三阶标题    Ctrl+U  下划线
+Ctrl+4  四阶标题    Ctrl+Home   返回Typora顶部
+Ctrl+5  五阶标题    Ctrl+End    返回Typora底部
+Ctrl+6  六阶标题    Ctrl+T  创建表格
+Ctrl+L  选中某句话   Ctrl+K  创建超链接
+Ctrl+D  选中某个单词  Ctrl+F  搜索
+Ctrl+E  选中相同格式的文字   Ctrl+H  搜索并替换
+Alt+Shift+5 删除线 Ctrl+Shift+I    插入图片
+Ctrl+Shift+M    公式块 Ctrl+Shift+Q    引用
+
+注：一些实体符号需要在实体符号之前加”\”才能够显示
+</code></pre></div>
+<h2 id="_3">块元素<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">换行符<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>在markdown中，段落由多个空格分隔。在Typora中，只需回车即可创建新段落。</p>
+<h3 id="_5">标题级别<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code># 一级标题 快捷键为 Ctrl+1
+## 二级标题 快捷键为 Ctrl+2
+......
+###### 六级标题 快捷键为 Ctrl+6
+</code></pre></div>
+<h3 id="_6">引用文字<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>&gt; 引用文字
+</code></pre></div>
+<p><mark>展现</mark></p>
+<blockquote>
+<p>引用文字</p>
+</blockquote>
+<h3 id="_7">无序列表<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>使用 * 和 - 都可以创建一个无序列表
+- AAA
+- BBB
+- CCC
+</code></pre></div>
+<p><mark>展现</mark></p>
+<ul>
+<li>
+<p>AAA</p>
+</li>
+<li>
+<p>BBB</p>
+</li>
+<li>CCC</li>
+</ul>
+<h3 id="_8">有序列表<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>使用 1. 2. 3. 创建有序列表
+1. AAA
+2. BBB
+3. CCC
+</code></pre></div>
+<p><mark>展现</mark></p>
+<ol>
+<li>AAA</li>
+<li>BBB</li>
+<li>CCC</li>
+</ol>
+<h3 id="_9">任务列表<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>``` 
+- [ ] 不勾选
+- [x] 勾选
+<div class="highlight"><pre><span></span><code>- [ ] 不勾选
+
+- [x] 勾选
+
+### 代码块
+
+在Typora中插入程序代码的方式有两种：使用反引号 \`（~ 键）、使用缩进（Tab）。
+
+-   插入行内代码，即插入一个单词或者一句代码的情况，使用 `code` 这样的形式插入。
+-   插入多行代码输入3个反引号（\`）+ 回车，并在后面选择一个语言名称即可实现语法高亮。
+
+```python
+def helloworld():
+    print(&quot;hello, world!&quot;)
+</code></pre></div></p>
+<h3 id="_10">数学表达式<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>当你需要在编辑器中插入数学公式时，可以使用两个美元符 $$ 包裹 TeX 或 LaTeX 格式的数学公式来实现。根据需要加载 Mathjax 对数学公式进行渲染。</p>
+<p>输入 <code>$$</code>，然后按下回车键，即可进行数学公式的编辑。</p>
+<div class="highlight"><pre><span></span><code>$$
+\mathbf{V}_1\times\mathbf{V}_2 = \mathbf{X}_3
+$$
+</code></pre></div>
+<p><mark>展现</mark>
+$$
+\mathbf{V}_1\times\mathbf{V}_2 = \mathbf{X}_3
+$$</p>
+<h3 id="_11">插入表格<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>输入 <code>| 表头1 | 表头2 |</code>并回车。即可创建一个包含2列表。快捷键<code>Ctrl+T</code>弹出对话框。</p>
+<ul>
+<li>不管是哪种方式，第一行为表头，第二行为分割表头和主体部分，第三行开始每一行为一个表格行</li>
+<li>列与列之间用管道符号 <code>|</code> 隔开</li>
+<li>
+<p>还可设置对齐方式(表头与内容之间)，如果不使用对齐标记，内容默认左对齐，表头居中对齐</p>
+<ul>
+<li>左对齐 ：|</li>
+<li>右对齐 |：</li>
+<li>中对齐 ：|：</li>
+<li>为了美观，可以使用空格对齐不同行的单元格，并在左右两侧都使用 | 来标记单元格边界</li>
+<li>为了使 Markdown 更清晰，| 和 - 两侧需要至少有一个空格（最左侧和最右侧的 | 外就不需要了）。</li>
+</ul>
+</li>
+</ul>
+<p><mark>展现</mark></p>
+<table>
+<thead>
+<tr>
+<th>表头1</th>
+<th>表头2</th>
+<th>表头3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>表头1内容</td>
+<td>表头2内容</td>
+<td>表头3内容</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_12">脚注<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>这个例子的脚注为 [^1]
+</code></pre></div>
+<p><mark>展示</mark></p>
+<p>这个例子的脚注为<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p>注意：该例子脚注标识是1，脚注标识可以为字母数字下划线，但是暂不支持中文。脚注内容可为任意字符，包括中文（脚注内容在本文最后）。</p>
+<h3 id="_13">分割线<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>输入<code>---</code>或者<code>***</code>再按回车即可绘制一条水平线，如下：</p>
+<p><mark>展现</mark></p>
+<hr />
+<h3 id="_14">目录<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p>输入<code>[toc]</code>然后回车，即可创建一个“目录”。TOC从文档中提取所有标题，其内容将自动更新。</p>
+<div class="highlight"><pre><span></span><code>[toc]
+</code></pre></div>
+<h2 id="_15">跨度元素<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<p>跨度元素即图片，网址，视频等，在Typora中输入后，会立即载入并呈现。</p>
+<h3 id="_16">链接<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<h4 id="_17">内部链接<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h4>
+<p>这是一个带有标题属性的(鼠标悬停在链接有提示) <code>[链接](http://example.com/ "标题")</code>
+这是一个没有标题属性的 <code>[链接](http://example.net/)</code></p>
+<p><a href="http://example.com/" title="标题">链接</a></p>
+<p><a href="http://example.net/">链接</a></p>
+<h4 id="_18">引用链接<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>这个链接用 1 作为网址变量 [新浪][1]
+这个链接用 google 作为网址变量 [Google][google]
+然后在文档的结尾为变量赋值（网址）
+
+[1]: https://www.sina.com.cn/  &quot;新浪参考&quot;
+[2]: https://www.google.com/  &quot;google参考&quot;
+</code></pre></div>
+<p><mark>展示</mark></p>
+<p>这个链接用 1 作为网址变量 <a href="https://www.sina.com.cn">sina</a></p>
+<p>这个链接用 2 作为网址变量 <a href="https://www.google.com">google</a></p>
+<h3 id="_19">网址<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<p>Typora允许用&lt;括号括起来&gt;, 把URL作为链接插入。</p>
+<p>Typora还会自动链接标准网址。</p>
+<div class="highlight"><pre><span></span><code>&lt;https://www.baidu.com&gt;
+</code></pre></div>
+<p><mark>展示</mark></p>
+<p><a href="https://www.baidu.com">https://www.baidu.com</a></p>
+<h3 id="_20">图片<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<p><code>![显示的文字](C:\Users\Hider\Desktop\echart.png "图片标题")</code></p>
+<p><code>![显示的文字](C:\Users\Hider\Desktop\echart.png)</code></p>
+<p>除了以上2种方式之外，还可以直接将图片拖拽进来，自动生成链接。</p>
+<h2 id="_21">强调语法<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h2>
+<h3 id="_22">斜体<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<p>使用<code>*单个星号*</code>或者<code>_单下划线_</code>可以字体倾斜。快捷键<code>Ctrl+I</code></p>
+<div class="highlight"><pre><span></span><code>*斜体* 或 _斜体_
+</code></pre></div>
+<p><mark>展示</mark></p>
+<p><em>斜体</em></p>
+<h3 id="_23">加粗<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<p>使用<code>**两个星号**</code>或者<code>__两个下划线__</code>可以字体加粗。快捷键<code>Ctrl+B</code></p>
+<div class="highlight"><pre><span></span><code>**加粗** 或 __加粗__
+</code></pre></div>
+<p><mark>展示</mark></p>
+<p><strong>加粗</strong></p>
+<h3 id="_24">加粗斜体<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<p>使用<code>***加粗斜体***</code>可以加粗斜体。</p>
+<div class="highlight"><pre><span></span><code>***加粗斜体***
+</code></pre></div>
+<p><mark>展示</mark></p>
+<p><strong><em>加粗斜体</em></strong></p>
+<h3 id="_25">代码标记<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<p>标记代码使用反引号，即在英文输入法下，ESC键下面和1键左边的符号。</p>
+<div class="highlight"><pre><span></span><code>使用`printf()`功能
+</code></pre></div>
+<p><mark>展示</mark></p>
+<p>使用该<code>printf()</code>功能</p>
+<h3 id="_26">删除线<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
+<p>使用<code>~~删除线~~</code> 快捷键 <code>Alt+Shift+5</code></p>
+<div class="highlight"><pre><span></span><code>~~删除线~~
+</code></pre></div>
+<p><mark>展示</mark></p>
+<p><del>删除线</del></p>
+<h3 id="_27">下划线<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<p>通过<code>&lt;u&gt;下划线的内容&lt;/u&gt;</code> 或者 快捷键<code>Ctrl+U</code>可实现下划线</p>
+<div class="highlight"><pre><span></span><code>&lt;u&gt;下划线的内容&lt;/u&gt;
+</code></pre></div>
+<p><mark>展示</mark></p>
+<p><u>下划线的内容</u></p>
+<h3 id="_28">高亮<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
+<p><code>==高亮==</code>(需在设置中打开该功能)</p>
+<div class="highlight"><pre><span></span><code>==我是最重要的==
+</code></pre></div>
+<p><mark>展示</mark></p>
+<p><mark>我是最重要的</mark></p>
+<h3 id="_29">下标<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h3>
+<p>可以使用<code>~文本~</code>或者<code>&lt;sub&gt;文本&lt;/sub&gt;</code>实现下标。</p>
+<p>(需在设置中打开该功能)</p>
+<div class="highlight"><pre><span></span><code>H~2~O  或者  H&lt;sub&gt;2&lt;/sub&gt;O
+</code></pre></div>
+<p><mark>展示</mark></p>
+<p>H<sub>2</sub>O 或者 H<sub>2</sub>O</p>
+<h3 id="_30">上标<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h3>
+<p>可以使用<code>^文本^</code>或者<code>&lt;sup&gt;文本&lt;/sup&gt;</code>实现上标。</p>
+<p>(需在设置中打开该功能)</p>
+<div class="highlight"><pre><span></span><code>x^2^  或者  x&lt;sup&gt;2&lt;sup&gt;
+</code></pre></div>
+<p><mark>展示</mark></p>
+<p>x<sup>2</sup>  或者  x<sup>2</sup></p>
+<h3 id="_31">文本居中<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h3>
+<p>使用<code>&lt;center&gt;</code>这是要居中的内容<code>&lt;/center&gt;</code>可以使文本居中</p>
+<div class="highlight"><pre><span></span><code>&lt;center&gt;这是要居中的内容&lt;/center&gt;
+</code></pre></div>
+<p><mark>展示</mark></p>
+<p><center>这是要居中的内容</center></p>
+<h3 id="_32">标题居中<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h3>
+<p>以三级标题为例:</p>
+<div class="highlight"><pre><span></span><code>&lt;h3 style=&quot;text-align:center&quot;&gt;这是居中的三级标题&lt;/h3&gt;
+</code></pre></div>
+<p><mark>展示</mark></p>
+<h3 style="text-align:center">这是居中的三级标题</h3>
+
+<h3 id="_33">换行符<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h3>
+<p>使用<code>空格+空格+Enter</code>可以实现换行</p>
+<p>或者可以使用<code>&lt;br&gt;</code>实现换行。 </p>
+<div class="highlight"><pre><span></span><code>&lt;br&gt;
+</code></pre></div>
+<h2 id="_34">转义语法<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h2>
+<p>Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠转义特殊字符：</p>
+<p><mark>展示</mark></p>
+<p><strong>文本加粗</strong>
+** 正常显示星号 **</p>
+<p>Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：</p>
+<div class="highlight"><pre><span></span><code>\   反斜线
+`   反引号
+*   星号
+_   下划线
+{}  花括号
+[]  方括号
+()  小括号
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   感叹号
+</code></pre></div>
+<h2 id="html">HTML<a class="headerlink" href="#html" title="Permanent link">&para;</a></h2>
+<p>支持HTML</p>
+<p>不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。</p>
+<p>目前支持的 HTML 元素有：<code>&lt;kbd&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; &lt;br&gt;</code>等 ，如：</p>
+<div class="highlight"><pre><span></span><code>使用&lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Alt&lt;/kbd&gt;+&lt;kbd&gt;Del&lt;/kbd&gt;重启电脑
+&lt;kbd&gt; &lt;/kbd&gt; -- 白色框框
+</code></pre></div>
+<p><mark>展示</mark></p>
+<p>使用<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd>重启电脑</p>
+<p><kbd> </kbd> -- 白色框框</p>
+<h2 id="_35">总结<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h2>
+<ol>
+<li>建议打开大纲视图<code>Ctrl+Shift+1</code></li>
+<li>插入表格需要顶格写，否则无法显示</li>
+</ol>
+<hr />
+<p>本文引用链接</p>
+<hr />
+<p>本文脚注内容</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>这里是脚注的内容&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../page-01/" class="md-footer__link md-footer__link--prev" aria-label="Previous: markdown中公式编辑教程" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              markdown中公式编辑教程
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../page-03/" class="md-footer__link md-footer__link--next" aria-label="Next: 屏蔽网页指定的元素" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              屏蔽网页指定的元素
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+    
+  </body>
+</html>
